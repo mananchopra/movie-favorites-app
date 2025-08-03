@@ -1,0 +1,109 @@
+/* MovieCard Styles */
+.movie-card {
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster {
+  position: relative;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 20px 20px 0 0;
+  transition: transform 0.3s ease;
+  background: #f8f9fa;
+}
+
+.movie-card:hover .movie-poster img {
+  transform: scale(1.05);
+}
+
+.no-poster {
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  text-align: center;
+}
+
+.movie-overview {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  
+}
+
+.heart-button:hover {
+  transform: scale(1.1);
+}
+
+.movie-info {
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+
+.movie-info h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.movie-year {
+  margin: 0 0 8px 0;
+  color: #667eea;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.movie-genre {
+  margin: 0 0 8px 0;
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.movie-rating {
+  margin: 0;
+  color: #f39c12;
+  font-weight: bold;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
