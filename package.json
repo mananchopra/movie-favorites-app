@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mananchopra.github.io/movie-favorites-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
